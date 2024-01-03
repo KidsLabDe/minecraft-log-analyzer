@@ -1,0 +1,89 @@
+[15:03:07] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[15:03:07] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[15:03:07] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLServerTweaker
+2024-01-03 15:03:08,267 WARN Disabling terminal, you're running in an unsupported environment.
+[15:03:08] [main/INFO] [FML]: Forge Mod Loader version 11.15.1.1722 for Minecraft 1.8.9 loading
+[15:03:08] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_382, running on Linux:amd64:5.15.0-84-generic, installed at /usr/lib/jvm/java-8-openjdk-amd64/jre
+[15:03:08] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:03:08] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[15:03:08] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:03:08] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:03:08] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:03:09] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[15:03:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:03:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[15:03:09] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[15:03:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[15:03:09] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[15:03:11] [Server thread/INFO]: Starting minecraft server version 1.8.9
+[15:03:11] [Server thread/INFO] [FML]: MinecraftForge v11.15.1.1722 Initialized
+[15:03:11] [Server thread/INFO] [FML]: Replaced 204 ore recipies
+[15:03:11] [Server thread/INFO] [FML]: Found 0 mods from the command line. Injecting into mod discoverer
+[15:03:11] [Server thread/INFO] [FML]: Searching /opt/mscs/worlds/Leer/mods for mods
+[15:03:12] [Server thread/INFO] [FML]: Forge Mod Loader has identified 8 mods to load
+[15:03:12] [Server thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, ComputerCraft, ComputerCraftEdu, customnpcs, worldedit, WorldEditCuiFe] at CLIENT
+[15:03:12] [Server thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, ComputerCraft, ComputerCraftEdu, customnpcs, worldedit, WorldEditCuiFe] at SERVER
+[15:03:12] [Server thread/INFO] [FML]: Processing ObjectHolder annotations
+[15:03:12] [Server thread/INFO] [FML]: Found 384 ObjectHolder annotations
+[15:03:12] [Server thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[15:03:12] [Server thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[15:03:12] [Server thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[15:03:12] [Forge Version Check/INFO] [ForgeVersionCheck]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[15:03:12] [Forge Version Check/INFO] [ForgeVersionCheck]: [WorldEditCuiFe] Starting version check at https://raw.githubusercontent.com/hexosse/WorldEditCUI-Forge-Edition/master/update.json
+[15:03:13] [Forge Version Check/INFO] [ForgeVersionCheck]: [WorldEditCuiFe] Found status: BETA Target: null
+[15:03:13][FINE/CustomNPCs][noppes.npcs.LogWriter:71] Wed Jan 03 15:03:13 CET 2024
+[15:03:13][FINE/CustomNPCs][noppes.npcs.controllers.ScriptController:47] Script Engines Available:
+[15:03:14] [Server thread/INFO] [FML]: Applying holder lookups
+[15:03:14] [Server thread/INFO] [FML]: Holder lookups applied
+[15:03:14] [Server thread/INFO] [FML]: Injecting itemstacks
+[15:03:14] [Server thread/INFO] [FML]: Itemstack injection complete
+[15:03:14] [Server thread/INFO]: Loading properties
+[15:03:14] [Server thread/INFO]: Default game type: ADVENTURE
+[15:03:14] [Server thread/INFO]: Generating keypair
+[15:03:14] [Server thread/INFO]: Starting Minecraft server on *:23002
+[15:03:14] [Server thread/INFO]: Using epoll channel type
+[15:03:14] [Server thread/INFO] [FML]: Injecting itemstacks
+[15:03:14] [Server thread/INFO] [FML]: Itemstack injection complete
+[15:03:14] [Server thread/INFO] [worldedit]: WorldEdit for Forge (version 6.1.1) is loaded
+[15:03:14] [Server thread/INFO] [FML]: Forge Mod Loader has successfully loaded 8 mods
+[15:03:14][FINE/CustomNPCs][noppes.npcs.controllers.LinkedNpcController:42] Loading Linked Npcs
+[15:03:14][FINE/CustomNPCs][noppes.npcs.controllers.LinkedNpcController:62] Done loading Linked Npcs
+[15:03:14] [Server thread/INFO]: Preparing level "Leer"
+[15:03:14] [Server thread/INFO] [FML]: Injecting existing block and item data into this server instance
+[15:03:14] [Server thread/INFO] [FML]: Applying holder lookups
+[15:03:14] [Server thread/INFO] [FML]: Holder lookups applied
+[15:03:14] [Server thread/INFO] [FML]: Loading dimension 0 (Leer) (net.minecraft.server.dedicated.DedicatedServer@29fde431)
+[15:03:14] [Server thread/INFO] [FML]: Loading dimension 1 (Leer) (net.minecraft.server.dedicated.DedicatedServer@29fde431)
+[15:03:14] [Server thread/INFO] [FML]: Loading dimension -1 (Leer) (net.minecraft.server.dedicated.DedicatedServer@29fde431)
+[15:03:14] [Server thread/INFO]: Preparing start region for level 0
+[15:03:15] [Server thread/INFO]: Done (0.460s)! For help, type "help" or "?"
+[15:03:15][FINE/CustomNPCs][noppes.npcs.controllers.DialogController:33] Loading Dialogs
+[15:03:15][FINE/CustomNPCs][noppes.npcs.controllers.DialogController:35] Done loading Dialogs
+[15:03:23] [User Authenticator #1/INFO]: UUID of player EinStein_Giga is b3185531-a824-468b-a419-607a8d52bc8f
+[15:03:23] [Netty Epoll Server IO #3/INFO] [FML]: Client protocol version 2
+[15:03:23] [Netty Epoll Server IO #3/INFO] [FML]: Client attempting to join with 10 mods : ComputerCraft@1.79,FTBU@2.0.2,FML@8.0.99.99,ComputerCraftEdu@1.79,customnpcs@1.8.9,worldedit@6.1.1,Forge@11.15.1.2318,FTBL@2.0.2,mcp@9.19,WorldEditCuiFe@1.0.7
+[15:03:24] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[15:03:24] [Server thread/INFO]: EinStein_Giga[/79.194.204.239:59848] logged in with entity id 0 at (-911.6506388308811, 4.0, -1647.8554515623732)
+[15:03:24] [Server thread/INFO]: EinStein_Giga (formerly known as CapSchwarzbart) joined the game
+[15:03:35] [Server thread/INFO]: EinStein_Giga lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
+[15:03:35] [Server thread/INFO]: EinStein_Giga left the game
+[15:30:24] [User Authenticator #2/INFO]: UUID of player Caveas is 2653d677-ebab-41a5-9cde-9644c920655f
+[15:30:24] [Netty Epoll Server IO #9/INFO] [FML]: Client protocol version 2
+[15:30:24] [Netty Epoll Server IO #9/INFO] [FML]: Client attempting to join with 8 mods : ComputerCraft@1.79,FML@8.0.99.99,ComputerCraftEdu@1.79,customnpcs@1.8.9,worldedit@6.1.1,Forge@11.15.1.2318,mcp@9.19,WorldEditCuiFe@1.0.7
+[15:30:24] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[15:30:24] [Server thread/INFO]: Caveas[/89.245.182.60:2778] logged in with entity id 1 at (-913.5, 4.0, -1645.5)
+[15:30:24] [Server thread/INFO]: Caveas joined the game
+[15:30:29] [Server thread/INFO]: [@: Changing to clear weather]
+[15:30:30] [Server thread/INFO]: [@: Changing to clear weather]
+[15:30:41] [Server thread/INFO]: Caveas has just earned the achievement [Taking Inventory]
+[15:31:58] [Server thread/INFO]: [@: Changing to clear weather]
+[15:32:00] [Server thread/INFO]: [@: Changing to clear weather]
+[15:32:45] [Server thread/INFO]: Caveas lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
+[15:32:45] [Server thread/INFO]: Caveas left the game
+[15:34:54] [User Authenticator #3/INFO]: UUID of player EinStein_Giga is b3185531-a824-468b-a419-607a8d52bc8f
+[15:34:54] [Netty Epoll Server IO #12/INFO] [FML]: Client protocol version 2
+[15:34:54] [Netty Epoll Server IO #12/INFO] [FML]: Client attempting to join with 10 mods : ComputerCraft@1.79,FTBU@2.0.2,FML@8.0.99.99,ComputerCraftEdu@1.79,customnpcs@1.8.9,worldedit@6.1.1,Forge@11.15.1.2318,FTBL@2.0.2,mcp@9.19,WorldEditCuiFe@1.0.7
+[15:34:54] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[15:34:54] [Server thread/INFO]: EinStein_Giga[/79.194.204.239:60005] logged in with entity id 2 at (-913.177634739132, 4.0, -1648.571369063638)
+[15:34:54] [Server thread/INFO]: EinStein_Giga joined the game
+[15:35:22] [Server thread/INFO]: <EinStein_Giga> hallo leute!

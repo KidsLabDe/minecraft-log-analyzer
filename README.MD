@@ -1,4 +1,4 @@
-# Minetest-Log-Analyzer & Telegram Bot
+# Minecraft-Log-Analyzer & Telegram Bot
 
 ## How to install
 
@@ -34,18 +34,11 @@ python3 log-analyzer.py
 Output:
 
 ```
-Log file: logs/22.log
-+--------+------+--------+-------+
-|  User  | Digs | Places | Total |
-+--------+------+--------+-------+
-| marita | 399  |  716   |  1115 |
-|  Lene  | 319  |  2787  |  3106 |
-| Luisa  | 2382 |  3227  |  5609 |
-| Heidi  | 7077 | 12127  | 19204 |
-+--------+------+--------+-------+
-Chat messages:
-<Heidi> Lene, schau dir mal den Eingang zum Bahnhof an
-<Heidi> um was zu schreiben musst du auf t drücken
+Log-Einträge:
+EinStein_Giga (formerly known as Newton) hat das Spiel betreten.
+Klausi hat das Spiel betreten.
+EinStein_ hat das Spiel betreten.
+EinStein sagt: hallo leute!
 ```
 
 ### Telegram-Mode

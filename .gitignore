@@ -1,2 +1,4 @@
 config.py
 logs/*.state
+.DS_Store
+logs/

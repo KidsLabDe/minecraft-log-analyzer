@@ -4,6 +4,19 @@ import telegram
 import argparse
 from config import BOT_TOKEN, CHAT_ID, LOG_DIR
 
+# ANSI escape sequences for colors
+class Colors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+
 def setup_telegram_bot(token, chat_id):
     try:
         bot = telegram.Bot(token=token)
@@ -13,34 +26,55 @@ def setup_telegram_bot(token, chat_id):
         return None
 
 def parse_log_file(log_file, state_file):
+    print(state_file)
     parsed_chat_messages = []
-    try:
-        with open(log_file, 'r') as file:
-            # Read the last line of the log file that was parsed
-            last_line = ''
-            if os.path.isfile(state_file):
-                with open(state_file, 'r') as state:
-                    last_line = state.read().strip()
+    last_line = ''
+    if os.path.isfile(state_file):
+        with open(state_file, 'r') as state:
+            last_line = state.read().strip()
 
-            # Skip lines that have already been parsed
-            for line in file:
-                if line.strip() == last_line:
-                    break
+    with open(log_file, 'r') as file:
+        lines = file.readlines()
 
-            # Parse new lines
-            for line in file:
-                chat_match = re.search(r'\[Server thread/INFO\]: <(.+)> (.+)', line)
-                if chat_match:
-                    username = chat_match.group(1)
-                    message = chat_match.group(2)
-                    parsed_chat_messages.append(f"{username} sagt: {message}")
-                join_match = re.search(r'\[Server thread/INFO\]: (.+) joined the game', line)
-                if join_match:
-                    username = join_match.group(1)
-                    parsed_chat_messages.append(f"{username} hat das Spiel betreten.")
-    except Exception as e:
-        print(f"Error parsing log file: {e}")
-        return []
+    # Find the last occurrence of the last parsed line
+    start_index = 0
+    last_line_found = None
+    last_line_number = None
+    if last_line:
+        for i in range(len(lines) - 1, -1, -1):
+            if lines[i].strip() == last_line:
+                start_index = i + 1
+                last_line_found = lines[i].strip()
+                last_line_number = i + 1
+                break
+
+
+
+# Example usage
+#-print(f"{Colors.OKGREEN}This is green text{Colors.ENDC}")
+#print(f"{Colors.WARNING}This is a warning{Colors.ENDC}")
+#print(f"{Colors.FAIL}This is an error{Colors.ENDC}")
+    if last_line_found:
+        print(f"{Colors.OKGREEN}Last line found: '{last_line_found}' at line number {last_line_number}")
+    else:
+        print(f"{Colors.WARNING}Last line not found")
+
+    # Parse new lines
+    for line in lines[start_index:]:
+        chat_match = re.search(r'\[Server thread/INFO\]: <(.+)> (.+)', line)
+        last_line = line
+        if chat_match:
+            username = chat_match.group(1)
+            message = chat_match.group(2)
+            parsed_chat_messages.append(f"{username} sagt: {message}")
+            print(f"{Colors.OKCYAN}{username} sagt: {message}")
+
+    # write the last line of the log file that was parsed to the state file
+    with open(state_file, 'w') as file:
+        file.write(last_line.strip())
+        print(f"letzte Zeile:" + last_line.strip())
+
+
 
     return parsed_chat_messages
 
@@ -77,7 +111,7 @@ def main():
         for file in files:
             if file == 'console.out':
                 log_file = os.path.join(root, file)
-                state_file = os.path.join(LOG_DIR, file + '.state')
+                state_file = os.path.join(root, file + '.state')
                 print("Processing log file: " + log_file)
                 parsed_chat_messages = parse_log_file(log_file, state_file)
                 if args.telegram:
@@ -86,5 +120,5 @@ def main():
                     for message in parsed_chat_messages:
                         print(message)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
